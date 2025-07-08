@@ -1,0 +1,49 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.21/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.21",
+    "version": "1.0.0",
+    "id": "1d9746ee-794e-45c2-b4ad-11aaa26e2fac",
+    "developer": {
+        "name": "My App, Inc.",
+        "websiteUrl": "https://adf-guardians-status-app.azurestaticapps.net",
+        "privacyUrl": "https://adf-guardians-status-app.azurestaticapps.net/index.html#/privacy",
+        "termsOfUseUrl": "https://adf-guardians-status-app.azurestaticapps.net/index.html#/termsofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "adf_status_tab_guardians",
+        "full": "Full name for adf_status_tab"
+    },
+    "description": {
+        "short": "Short description of adf_status_tab",
+        "full": "Full description of adf_status_tab"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [],
+    "composeExtensions": [],
+    "configurableTabs": [],
+    "staticTabs": [
+        {
+            "entityId": "index",
+            "name": "Home",
+            "contentUrl": "https://adf-guardians-status-app.azurestaticapps.net/index.html#/tab",
+            "websiteUrl": "https://adf-guardians-status-app.azurestaticapps.net/index.html#/tab",
+            "scopes": [
+                "personal",
+                "groupChat",
+                "team"
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "adf-guardians-status-app.azurewebsites.net",
+        "https://adf-guardians-status-app.azurestaticapps.net"
+    ]
+}
